@@ -39,4 +39,18 @@ $(document).ready(function(){
         //console.log(studenti[i]);
         console.log(studenti[i].nome + ' ' + studenti[i].cognome);
     }
+    /* Dare la possibilità all’utente, attraverso 3 prompt(), 
+    di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.  */
+    var studenteInserito = {
+        nome: prompt('Scrivi il tuo nome.'),
+        cognome: prompt('Scrivi il tuo cognome.'),
+        eta: prompt('Quanti anni hai?'),
+    }
+    console.log(studenteInserito);
+    //Inserire il nuovo oggetto  nell'array creato al punto 2 e mostrare alla fine il contenuto dell'array.
+    studenti.push(studenteInserito);
+    console.log(studenti);
+    for(var i = 0; i < studenti.length; i++){
+        console.log(studenti[i].nome + ' ' + studenti[i].cognome);
+    }
 })
